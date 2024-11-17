@@ -1,0 +1,33 @@
+.footer {
+  background-color: #6A5ACD; /* Usando o BlueViolet da paleta */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffffff; /* Mantivemos o texto branco para contraste */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #AD8EE7; /* Uma cor mais suave da paleta para hover */
+}

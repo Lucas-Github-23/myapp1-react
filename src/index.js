@@ -1,27 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import MyButton from './MyButton';
-import Container from './Container';
-import QuemSomos from './QuemSomos';
+import './styles/styles.css';  // Importação dos estilos globais, se necessário
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <Container />
-  
-
-  
-
-    {/*<App />*/}
-
-  </React.StrictMode>
+    <App />
+    
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,83 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Garante que todos os itens da navbar fiquem na mesma altura */
+  padding: 10px 20px;
+  background-color: #6A5ACD;  /* Usando BlueViolet para o fundo da navbar */
+  color: #fff;
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;  /* Garante que a imagem e o menu fiquem alinhados na mesma altura */
+}
+
+.logo-img {
+  height: 60px; /* Ajuste a altura da imagem conforme necessário */
+  width: auto;  /* Mantém a proporção da imagem */
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Alinha o menu à direita */
+  flex: 1; /* Faz o menu ocupar todo o espaço disponível à direita */
+}
+
+.navbar-item {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;  /* Alinha verticalmente o conteúdo dentro do item */
+}
+
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-item a:hover {
+  background-color: #AD8EE7; /* Azul mais claro da paleta no hover */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #4B0082;  /* Uma cor próxima ao Indigo, que combina bem com BlueViolet */
+  padding: 10px 0;
+  list-style-type: none;
+  margin: 0;
+  min-width: 200px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
