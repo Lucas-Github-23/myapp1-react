@@ -1,17 +1,17 @@
 import React from 'react';
-import './AboutUs.css';  // Importação dos estilos específicos para a página "Quem Somos"
+import './AboutUs.css';
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
       <h1>Quem Somos</h1>
       <p>
-        Bem-vindo ao nosso site! Somos uma equipe dedicada a criar projetos inovadores e jogos divertidos.
-        Nosso objetivo é compartilhar conhecimento e experiências através do desenvolvimento de software.
+        Somos alunos do curso técnico em Desenvolvimento de Sistemas do Colégio Santa Maria Goretti.
       </p>
       <p>
-        Acreditamos na importância da criatividade e no poder da tecnologia para transformar ideias em realidade.
-        Continue explorando para saber mais sobre nossos projetos e jogos.
+        Este site foi criado para apresentar nossos projetos e jogos desenvolvidos ao longo do curso,
+        aplicando na prática os conhecimentos adquiridos em programação, design e desenvolvimento de sistemas.
+        Aqui, você encontrará exemplos do que aprendemos e produzimos, focados em unir funcionalidade e criatividade.
       </p>
     </div>
   );

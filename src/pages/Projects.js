@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Projects.css';  // Importação dos estilos específicos para a página de projetos
+import './Projects.css'; 
 
 const Projects = () => {
-  // Lista de projetos fictícios (substitua com dados reais ou provenientes de uma API)
   const projectsList = [
-    { id: 1, title: 'Projeto 1', description: 'Um projeto inovador sobre tecnologia.', githubLink: 'https://github.com/example/projeto1' },
-    { id: 2, title: 'Projeto 2', description: 'Explorando novas formas de energia sustentável.', githubLink: 'https://github.com/example/projeto2' },
-    { id: 3, title: 'Projeto 3', description: 'Soluções de software para pequenas empresas.', githubLink: 'https://github.com/example/projeto3' },
-    { id: 4, title: 'Projeto 3', description: 'Soluções de software para pequenas empresas.', githubLink: 'https://github.com/example/projeto3' }
+    { id: 1, title: 'Química', description: 'Nesse site foram usadas fontes diretamente do google fonts', githubLink: 'https://lucas-github-23.github.io/fontes_do_google_quimica/' },
   ];
 
   return (

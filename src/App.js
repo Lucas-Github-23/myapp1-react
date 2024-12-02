@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './routes';  // Corrigido para importar corretamente como AppRoutes
+import AppRoutes from './routes'; 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 

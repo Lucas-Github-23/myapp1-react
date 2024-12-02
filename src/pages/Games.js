@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Games.css';  // Importação dos estilos específicos para a página de jogos
-
+import './Games.css'; 
 const Games = () => {
-  // Lista de jogos fictícios (você pode substituir por dados reais ou provenientes de uma API)
+ 
   const gamesList = [
-    { id: 1, title: 'Jogo 1', description: 'Um jogo incrível de aventura.' },
-    { id: 2, title: 'Jogo 2', description: 'Explore o mundo dos mistérios.' },
-    { id: 3, title: 'Jogo 3', description: 'Desafios de lógica e estratégia.' }
+    { id: 1, title: 'Pixel Adventure', description: 'Um jogo incrível de aventura.' },
+    { id: 2, title: 'Jogo de Geografia', description: 'Pequeno projeto de geografia sobre sustentabilidade' },
   ];
 
   return (

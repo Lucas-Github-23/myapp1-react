@@ -1,16 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './ProjectPage.css';  // Importação dos estilos específicos para a página de projeto
+import './ProjectPage.css';
 
 const ProjectPage = () => {
   const { id } = useParams();
-
-  // Conteúdo fictício para os projetos (substitua com dados reais conforme necessário)
   const projectData = {
-    1: { title: 'Projeto 1', description: 'Um projeto inovador sobre tecnologia.', githubLink: 'https://github.com/example/projeto1' },
-    2: { title: 'Projeto 2', description: 'Explorando novas formas de energia sustentável.', githubLink: 'https://github.com/example/projeto2' },
-    3: { title: 'Projeto 3', description: 'Soluções de software para pequenas empresas.', githubLink: 'https://github.com/example/projeto3' },
-    4: { title: 'Projeto 4', description: 'Soluções de software para pequenas empresas.', githubLink: 'https://github.com/example/projeto4' }
+    1: { title: 'Química', description: 'Uma Atividade para usar o google fonts', githubLink: 'https://lucas-github-23.github.io/fontes_do_google_quimica/' },
   };
 
   const project = projectData[id];

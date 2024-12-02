@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contact.css';  // Importação dos estilos específicos para a página "Contato"
+import './Contact.css';  
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -11,7 +11,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de envio de dados pode ser implementada aqui (ex: API ou email)
+  
     alert('Mensagem enviada com sucesso!');
     setFormData({ name: '', email: '', message: '' });
   };

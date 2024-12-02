@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// Importando a imagem
 import logoImg from '../images/icon.png';
 
 const Navbar = () => {
@@ -16,7 +15,6 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          {/* Usando a imagem importada */}
           <img src={logoImg} alt="Logo" className="logo-img" />
         </Link>
       </div>
