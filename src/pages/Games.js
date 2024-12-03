@@ -6,6 +6,7 @@ const Games = () => {
   const gamesList = [
     { id: 1, title: 'Pixel Adventure', description: 'Um jogo incrível de aventura.' },
     { id: 2, title: 'Jogo de Geografia', description: 'Pequeno projeto de geografia sobre sustentabilidade' },
+    { id: 3, title: 'Caça Palavras', description: '' },
   ];
 
   return (
