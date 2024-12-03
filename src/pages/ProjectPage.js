@@ -6,6 +6,7 @@ const ProjectPage = () => {
   const { id } = useParams();
   const projectData = {
     1: { title: 'Química', description: 'Uma Atividade para usar o google fonts', githubLink: 'https://lucas-github-23.github.io/fontes_do_google_quimica/' },
+    2: { title: 'Agrinho 2024', description: '', githubLink: 'https://lucas-github-23.github.io/Agrinho-2024/' },
   };
 
   const project = projectData[id];
