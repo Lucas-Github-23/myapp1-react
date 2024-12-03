@@ -5,6 +5,7 @@ import './Projects.css';
 const Projects = () => {
   const projectsList = [
     { id: 1, title: 'Química', description: 'Nesse site foram usadas fontes diretamente do google fonts', githubLink: 'https://lucas-github-23.github.io/fontes_do_google_quimica/' },
+    { id: 2, title: 'Agrinho', description: '', githubLink: 'https://lucas-github-23.github.io/Agrinho-2024/' },
   ];
 
   return (
