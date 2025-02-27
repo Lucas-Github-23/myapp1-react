@@ -1,35 +1,83 @@
+/* Estilização da Página de Jogos - Design Refinado e Interativo */
 .game-page-container {
-    max-width: 800px;
-    margin: 50px auto;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1E1E1E; /* Tom mais sólido para criar contraste */
+  border-radius: 12px; /* Bordas mais arredondadas para suavizar o visual */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais profunda e suave */
+  color: #E0E0E0;
+}
+
+.game-page-container h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700; /* Peso maior para destacar o título */
+  letter-spacing: 1px; /* Espaçamento entre as letras para um visual mais sofisticado */
+}
+
+.game-page-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #D1D1D1;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 30px; /* Indenta o primeiro parágrafo para dar um visual mais polido */
+}
+
+.iframe-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 600px; /* Aumenta a altura para dar mais espaço ao jogo */
+  border: none;
+  border-radius: 12px; /* Bordas arredondadas para criar um visual mais fluido */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave e profunda */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .game-page-container {
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .game-page-container h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2.2rem; /* Ajusta o tamanho do título para telas menores */
   }
-  
+
   .game-page-container p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
-    text-align: justify;
+    font-size: 1rem;
   }
-  
-  .iframe-container {
-    margin-top: 20px;
-  }
-  
+
   .iframe-container iframe {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Ajusta a altura do iframe para telas menores */
   }
-  
+}
+/* Estilização do Botão Full Screen */
+.fullscreen-btn {
+  margin-top: 20px;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.fullscreen-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.fullscreen-btn:focus {
+  outline: none;
+}

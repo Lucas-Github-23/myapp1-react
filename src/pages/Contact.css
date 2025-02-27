@@ -1,50 +1,88 @@
+/* Estilização da Seção de Contato - Design Refinado e Elegante */
 .contact-container {
-    max-width: 800px;
-    margin: 50px auto;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1E1E1E; /* Fundo mais sólido para maior contraste */
+  border-radius: 12px; /* Bordas mais arredondadas para suavizar o visual */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave e profunda */
+  color: #E0E0E0;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700; /* Peso maior para destaque */
+  letter-spacing: 1px; /* Espaçamento entre as letras para uma leitura mais elegante */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Mais espaço entre os campos */
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #D1D1D1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px; /* Bordas mais arredondadas para um visual mais amigável */
+  background-color: #222;
+  color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições para uma interação suave */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007BFF; /* Cor de destaque no foco */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Brilho suave ao focar nos campos */
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Sombra suave ao passar o mouse */
+}
+
+.contact-form button:active {
+  transform: scale(1); /* Reseta o efeito de escala ao clicar */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .contact-container h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2rem;
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
+
   .contact-form label {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1rem;
   }
-  
+
   .contact-form input,
   .contact-form textarea {
+    font-size: 0.95rem;
     padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
-  
-  .contact-form button {
-    padding: 10px;
-    font-size: 1.1rem;
-    color: #ffffff;
-    background-color: #333;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background-color: #555;
-  }
-  
+}

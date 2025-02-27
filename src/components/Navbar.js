@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -7,8 +7,23 @@ import logoImg from '../images/icon.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Fecha o menu se clicar fora dele
+  const handleClickOutside = (e) => {
+    if (!e.target.closest('.navbar-item')) {
+      setIsOpen(false);
+    }
+  };
+
+  // Hook para adicionar o listener de clique fora
+  useEffect(() => {
+    document.body.addEventListener('click', handleClickOutside);
+    return () => {
+      document.body.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
