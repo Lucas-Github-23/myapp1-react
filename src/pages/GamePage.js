@@ -15,7 +15,7 @@ const GamePage = () => {
     },
     2: { 
       title: 'Projeto de Geografia', 
-      description: 'Este jogo foi desenvolvido como parte de um projeto para a disciplina de Geografia pelos alunos do 2º Ano A do curso técnico em Desenvolvimento de Sistemas do Colégio Santa Maria Goretti.',
+      description: 'Este jogo foi desenvolvido como parte de um projeto para a disciplina de Geografia pelos alunos do 2º Ano A do curso técnico em Desenvolvimento de Sistemas do Colégio Santa Maria Goretti. 2024',
       url: 'https://lucas-github-23.github.io/projeto-geografia/',
       additionalInfo: 'Este jogo aborda o tema das queimadas nas florestas, destacando a gravidade desse problema ambiental. No entanto, as queimadas são apenas uma parte de um cenário mais amplo de desafios que enfrentamos atualmente, como o desmatamento, a poluição dos rios, a perda de biodiversidade e as mudanças climáticas. É fundamental que reflitamos sobre a importância de preservar o meio ambiente em todas as suas dimensões, buscando ações que promovam um futuro mais sustentável para o planeta.'
     },
